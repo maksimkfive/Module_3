@@ -41,13 +41,10 @@ class Sword<M extends Metal> {
 
 public class Test {
     public static void main(String[] args) {
-        // Нельзя создать меч из пластика
-        // Sword<Plastic> plasticSword = new Sword<>(new Plastic());
-
-        // Создаем меч из стали
+        
         Sword<Steel> steelSword = new Sword<>(new Steel());
 
-        // Проверяем прочность меча из стали
+        
         if (steelSword.isStrong()) {
             System.out.println("Меч из стали прошел проверку прочности");
         } else {
